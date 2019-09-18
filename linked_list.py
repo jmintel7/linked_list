@@ -27,8 +27,14 @@ class linked_list:
             total = total +1
         return total
 
-    def display(self):
-        pass
+    def display_image(self):
+        cur_node = self.head
+        images = []
+        count = 0
+        while cur_node.next!= None:
+            if cur_node.data: images.append(cur_node.data[0])
+            cur_node = cur_node.next
+        return images
 
     def get_rollno(self, rollno):
         cur_node = self.head
@@ -53,3 +59,25 @@ class linked_list:
                 return
         print('Student with the roll no does not exist')
         return None
+
+    def get_image(self, index):
+        if index >= self.length():
+            print('ERROR: Index out of range')
+            return None
+        cur_node = self.head
+        for i in range(index+1):
+            cur_node = cur_node.next
+        return cur_node.data
+
+    def erase_image(self, index):
+        if index >= self.length():
+            print('ERROR: Index out of range')
+            return None
+        cur_node = self.head
+        for i in range(index+1):
+            last_node = cur_node
+            cur_node = cur_node.next
+        last_node.next = cur_node.next
+
+
+
