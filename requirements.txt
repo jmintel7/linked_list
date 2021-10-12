@@ -4,7 +4,7 @@ jsonschema==3.0.2
 JsonSir==0.0.2
 memory-profiler==0.55.0
 numpy==1.17.2
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 pandas==0.25.1
 psutil==5.6.3
 pyrsistent==0.15.4
@@ -21,7 +21,7 @@ jsonschema==3.0.2
 JsonSir==0.0.2
 memory-profiler==0.55.0
 numpy==1.17.2
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 pandas==0.25.1
 psutil==5.6.3
 pyrsistent==0.15.4
